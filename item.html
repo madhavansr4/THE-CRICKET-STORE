@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>THE CRICKET STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <center>
+        <div class="header">
+            <nav>
+                <h1>A CRICKET STORE</h1>
+                <ul>
+                    <li><a href="index.html">HOME |</a></li>
+                    <li><a href="index.html">Products |</a></li>
+                    <li>About us |</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+    
+        </div>
+   
+    <hr>
+
+    <div class="container">
+
+        <form id="form1" class="too">
+        
+        <table class="form1" border="1">
+            <tr>
+                <td>Name</td>
+                <td><input id="name" type="text" placeholder="ENTER NAME"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input id="ph" type="number" placeholder="ENTER NUMBER"></td>
+    
+            </tr>
+           
+            <tr>
+                <td>EMAIL</td>
+                <td><input id="email" type="text" placeholder="ENTER VALID MAILID"></td>
+            </tr>
+        </table>
+            <table class="form1" border="1">
+            <tr >
+                
+               <td><button id="submit" type="button" onclick="submit1()" >SUBMIT</button></td>
+                
+            </tr>
+            </table>
+        </form>
+            
+       
+            <table id="datatable" class="form1" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Mail ID</th>
+                        
+                    </tr>
+                </thead>
+                
+                    <tbody id="dataBody">
+                        
+                    </tbody>
+                   
+            </table>
+        </form>
+    </div>
+    
+    
+    </center>
+    
+
+
+    <hr>
+
+    <center>
+        <div class="contact1">
+            <h1>CONTACT</h1>
+            <h3>1234567890</h3>
+            <h3>abcdefg@gmail.com</h3>
+            <p class="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt labore temporibus dignissimos tempore hic aut placeat, fuga adipisci fugit veritatis in tempora quidem. Ea vitae reprehenderit nobis dolore rem cumque expedita laborum explicabo. Eveniet doloribus ratione adipisci deserunt. Repellendus eaque earum sint, tenetur fugiat dicta libero ducimus, asperiores accusamus dolorem facilis et? Dolorem natus maiores consequatur rem eos dolor amet voluptas quam, dolores, quos, accusantium blanditiis? Necessitatibus facere tempora debitis illum explicabo modi nesciunt rem porro sint, accusamus amet dolor!</p>
+            <a href="index.html">HOME</a>
+    
+        </div>
+    </center>
+    <hr>
+</body>
+<script>
+    function submit1() 
+{
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("ph").value;
+    var email = document.getElementById("email").value;
+    
+    var table = document.getElementById("datatable");
+    var newRow = table.insertRow(-1);
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+  
+    
+    cell1.textContent = name;
+    cell2.textContent = phone;
+    cell3.textContent = email;
+    
+    document.getElementById("form1").reset()
+
+
+}
+           
+</script>
+</html>
